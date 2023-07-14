@@ -95,6 +95,7 @@ check_escala = CheckButtons(
     [True],
 )
 
+
 sld_vi.on_changed(atualizar_grafico)
 sld_theta.on_changed(atualizar_grafico)
 sld_m.on_changed(atualizar_grafico)
