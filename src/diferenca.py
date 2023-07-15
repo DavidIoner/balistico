@@ -63,6 +63,7 @@ x, y = calcular_trajetoria(Vi, theta, m, D)
 plt.xlabel("Distância (m)")
 plt.ylabel("Altura (m)")
 plt.title("Trajetória do Projétil")
+# ax.set_facecolor("#dbddd3")
 ax.legend()
 
 plt.show()
