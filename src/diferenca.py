@@ -6,9 +6,9 @@ from matplotlib.widgets import CheckButtons
 
 # Inicialização das variáveis
 Vi = 950.0  # Velocidade inicial (m/s)
-theta = 15.0  # Ângulo de lançamento (em graus)
+theta = 10.0  # Ângulo de lançamento (em graus)
 m = 9.5  # Massa do projétil (kg)
-D = 0.05  # Coeficiente de arrasto
+D = 0.01  # Coeficiente de arrasto
 
 # Função para calcular a trajetória
 def calcular_trajetoria(Vi, theta, m, D):
@@ -41,7 +41,8 @@ def trajetoria_atual(theta):
     t = 0.0  # Tempo inicial
     x = [0.0]  # Posição horizontal inicial
     y = [0.0]  # Posição vertical inicial
-    ang = np.radians(theta)
+    dset = theta - 0.5
+    ang = np.radians(dset)
     while t < 700:
         t += dt
         x.append(x[-1] + np.cos(ang) * dt)
@@ -63,7 +64,7 @@ x, y = calcular_trajetoria(Vi, theta, m, D)
 plt.xlabel("Distância (m)")
 plt.ylabel("Altura (m)")
 plt.title("Trajetória do Projétil")
-# ax.set_facecolor("#dbddd3")
+ax.set_facecolor("#dbddd3")
 ax.legend()
 
 plt.show()

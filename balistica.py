@@ -7,7 +7,7 @@ from matplotlib.widgets import CheckButtons
 Vi = 950.0  # Velocidade inicial (m/s)
 theta = 20.0  # Ângulo de lançamento (em graus)
 m = 9.5  # Massa do projétil (kg)
-D = 0.05  # Coeficiente de arrasto
+D = 0.01  # Coeficiente de arrasto
 
 # Função para calcular a trajetória
 def calcular_trajetoria(Vi, theta, m, D):
@@ -31,7 +31,6 @@ def calcular_trajetoria(Vi, theta, m, D):
         y.append(y[-1] + Vy * dt)
 
         t += dt
-
     return x, y
 
 
