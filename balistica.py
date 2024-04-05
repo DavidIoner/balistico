@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 from matplotlib.widgets import CheckButtons
 
 # Inicialização das variáveis
-Vi = 950.0  # Velocidade inicial (m/s)
-theta = 20.0  # Ângulo de lançamento (em graus)
+Vi = 1413.0  # Velocidade inicial (m/s)
+theta = 0.33  # Ângulo de lançamento (em graus)
 m = 9.5  # Massa do projétil (kg)
 D = 0.01  # Coeficiente de arrasto
 
